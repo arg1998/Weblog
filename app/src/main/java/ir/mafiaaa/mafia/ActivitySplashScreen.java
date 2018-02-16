@@ -33,7 +33,7 @@ public class ActivitySplashScreen extends AppCompatActivity {
 
     public void log(String log)
     {
-        Log.d("FUUUCK" , log);
+        Log.d("AAA Team : " , log);
     }
 
     /**

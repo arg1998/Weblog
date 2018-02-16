@@ -29,7 +29,7 @@ public class MConstants
     public class Storage
     {
         public static final String PrefsUserData = "MafiaUserData";
-        public static final String PrefsSetting = "MafiaUserData";
+        public static final String PrefsSetting = "MafiaUserSetting";
         public static final String PrefsSetting_SoundFx_KEY = "soundFx";
         public static final String PrefsSetting_Music_KEY = "music";
     }

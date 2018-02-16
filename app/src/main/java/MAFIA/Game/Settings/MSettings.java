@@ -13,11 +13,11 @@ public class MSettings
 {
     private  boolean isSoundFxEnabled = true;
     private  boolean isMusicEnabled = true;
-    private MStorage setfile;
+    private MStorage settingFile;
 
     public MSettings(Context ctx)
     {
-        setfile = new MStorage(ctx, MConstants.Storage.PrefsSetting);
+        settingFile = new MStorage(ctx, MConstants.Storage.PrefsSetting);
         readSettings();
     }
 
@@ -29,19 +29,19 @@ public class MSettings
     {
         int temp;
 
-        temp = setfile.getInt(MConstants.Storage.PrefsSetting_SoundFx_KEY);
+        temp = settingFile.getInt(MConstants.Storage.PrefsSetting_SoundFx_KEY);
         if(temp == -1)
         {
-            setfile.setInt(MConstants.Storage.PrefsSetting_SoundFx_KEY , 1);
+            settingFile.setInt(MConstants.Storage.PrefsSetting_SoundFx_KEY , 1);
             isSoundFxEnabled = true;
         }
         else isSoundFxEnabled = (temp == 1);
 
 
-        temp = setfile.getInt(MConstants.Storage.PrefsSetting_Music_KEY);
+        temp = settingFile.getInt(MConstants.Storage.PrefsSetting_Music_KEY);
         if(temp == -1)
         {
-            setfile.setInt(MConstants.Storage.PrefsSetting_Music_KEY , 1);
+            settingFile.setInt(MConstants.Storage.PrefsSetting_Music_KEY , 1);
             isMusicEnabled = true;
         }
         else isMusicEnabled = (temp == 1);
@@ -53,12 +53,12 @@ public class MSettings
 
     public void setSoundFxEnabled(boolean state)
     {
-        setfile.setInt(MConstants.Storage.PrefsSetting_SoundFx_KEY , ((state) ? 1 : 0 ) );
+        settingFile.setInt(MConstants.Storage.PrefsSetting_SoundFx_KEY , ((state) ? 1 : 0 ) );
         isSoundFxEnabled = state;
     }
     public void setMusicEnabled(boolean state)
     {
-        setfile.setInt(MConstants.Storage.PrefsSetting_Music_KEY , ((state) ? 1 : 0 ) );
+        settingFile.setInt(MConstants.Storage.PrefsSetting_Music_KEY , ((state) ? 1 : 0 ) );
         isMusicEnabled = state;
     }
 
