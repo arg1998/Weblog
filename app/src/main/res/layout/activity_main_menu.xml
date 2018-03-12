@@ -9,6 +9,7 @@
 
     <ImageButton
         android:id="@+id/play_btn"
+        android:clickable="true"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/bg_main_icon"
@@ -19,6 +20,7 @@
 
     <ImageButton
         android:id="@+id/profile_btn"
+        android:clickable="true"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/bg_main_icon"
@@ -31,6 +33,7 @@
 
     <ImageButton
         android:id="@+id/skills_btn"
+        android:clickable="true"
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:srcCompat="@drawable/ic_skills"
@@ -43,6 +46,7 @@
 
     <ImageButton
         android:id="@+id/shop_btn"
+        android:clickable="true"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/bg_main_icon"
@@ -56,6 +60,7 @@
 
     <ImageButton
         android:id="@+id/setting_btn"
+        android:clickable="true"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_toLeftOf="@+id/play_btn"

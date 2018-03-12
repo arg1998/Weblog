@@ -6,4 +6,8 @@
 
     <!--main menu-->
     <color name="colorButtonMain">#fff</color>
+
+    <!--ShopActivity-->
+    <color name="lightgray">#ededed</color>
+
 </resources>

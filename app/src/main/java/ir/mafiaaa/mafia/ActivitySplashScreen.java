@@ -122,7 +122,7 @@ public class ActivitySplashScreen extends AppCompatActivity {
     private void TEMP_openAuthorizationActivity()
     {
 
-        startActivity(new Intent(this,ActivityAuthorization.class));
+        startActivity(new Intent(this,ActivityMainMenu.class));
         overridePendingTransition(R.anim.anim_activity_transition_to_left_in,R.anim.anim_activity_transition_to_left_out);
         this.finish();
     }

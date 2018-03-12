@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivityAuthorization" />
-        <activity android:name=".ActivityMainMenu"></activity>
+        <activity android:name=".ActivityMainMenu" />
+        <activity android:name=".ShopActivity"></activity>
     </application>
 
 </manifest>
