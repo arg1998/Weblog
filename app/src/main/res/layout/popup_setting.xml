@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="400dp"
+    android:background="@color/SettingBackground"
+    android:padding="5dp"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="#fff"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/bg_setting_close"/>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/music_btn"
+            android:background="@color/MusicBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/txtMusicState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="On"
+                android:textSize="16sp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sound_effect_btn"
+            android:background="@color/SoundEffectBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sound Effects"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/txtSoundEffectState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="On"
+                android:textSize="16sp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Share"
+            android:drawableStart="@drawable/ic_share"
+            android:drawableLeft="@drawable/ic_share"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_shop_button"
+            android:textColor="#fff"/>
+        <Button
+            android:id="@+id/btnCreators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" creators"
+            android:drawableStart="@drawable/ic_people"
+            android:drawableLeft="@drawable/ic_people"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_shop_button"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            />
+        <Button
+            android:id="@+id/btnReportProblem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" report problem"
+            android:drawableStart="@drawable/ic_report_problem"
+            android:drawableLeft="@drawable/ic_report_problem"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_shop_button"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

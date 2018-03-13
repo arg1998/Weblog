@@ -8,7 +8,7 @@
     tools:context="ir.mafiaaa.mafia.ShopActivity"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="#e2e2e2"
+    android:background="#646464"
     android:gravity="center"
     android:id="@+id/shop_layout">
     <LinearLayout

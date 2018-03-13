@@ -59,6 +59,7 @@
         />
 
     <ImageButton
+        android:onClick="ShowPopup"
         android:id="@+id/setting_btn"
         android:clickable="true"
         android:layout_width="80dp"

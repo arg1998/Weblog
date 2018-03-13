@@ -10,4 +10,9 @@
     <!--ShopActivity-->
     <color name="lightgray">#ededed</color>
 
+    <!--SettingPopup-->
+    <color name="SettingBackground">#1e224f</color>
+    <color name="MusicBackground">#b20000</color>
+    <color name="SoundEffectBackground">#0068b2</color>
+    <color name="ButtonOff">#4b4b4b</color>
 </resources>
