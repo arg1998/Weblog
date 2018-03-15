@@ -89,35 +89,38 @@
             android:id="@+id/btnShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Share"
+            android:text="Share"
             android:drawableStart="@drawable/ic_share"
             android:drawableLeft="@drawable/ic_share"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/bg_shop_button"
-            android:textColor="#fff"/>
+            android:background="@drawable/bg_button_1"
+            android:textColor="#fff"
+            android:drawablePadding="5dp"/>
         <Button
             android:id="@+id/btnCreators"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" creators"
+            android:text="creators"
             android:drawableStart="@drawable/ic_people"
             android:drawableLeft="@drawable/ic_people"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/bg_shop_button"
+            android:background="@drawable/bg_button_1"
             android:textColor="#fff"
             android:layout_marginTop="20dp"
+            android:drawablePadding="5dp"
             />
         <Button
             android:id="@+id/btnReportProblem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" report problem"
+            android:text="report problem"
             android:drawableStart="@drawable/ic_report_problem"
             android:drawableLeft="@drawable/ic_report_problem"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/bg_shop_button"
+            android:background="@drawable/bg_button_1"
             android:textColor="#fff"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5dp"/>
 
 
 

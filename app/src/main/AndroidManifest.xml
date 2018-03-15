@@ -19,7 +19,8 @@
         <activity android:name=".ActivityAuthorization" />
         <activity android:name=".ActivityMainMenu" />
         <activity android:name=".ShopActivity" />
-        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".SelfProfileActivity"></activity>
     </application>
 
 </manifest>

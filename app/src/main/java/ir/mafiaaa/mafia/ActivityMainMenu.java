@@ -61,6 +61,14 @@ public class ActivityMainMenu extends AppCompatActivity {
             }
         });
 
+        profileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMainMenu.this , SelfProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
         /* Setting Popup */
 
