@@ -20,7 +20,8 @@
         <activity android:name=".ActivityMainMenu" />
         <activity android:name=".ShopActivity" />
         <activity android:name=".SettingActivity" />
-        <activity android:name=".SelfProfileActivity"></activity>
+        <activity android:name=".SelfProfileActivity" />
+        <activity android:name=".SkillsActivity"></activity>
     </application>
 
 </manifest>

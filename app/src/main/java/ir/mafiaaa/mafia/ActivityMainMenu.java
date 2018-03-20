@@ -57,7 +57,7 @@ public class ActivityMainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ActivityMainMenu.this , ShopActivity.class);
-                startActivity(intent); //change
+                startActivity(intent);
             }
         });
 
@@ -68,6 +68,16 @@ public class ActivityMainMenu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        skillsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMainMenu.this , SkillsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
         /* Setting Popup */
