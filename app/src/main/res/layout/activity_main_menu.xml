@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="ir.mafiaaa.mafia.ActivityMainMenu"
-    android:background="#000">
+    android:background="#000"
+    android:id="@+id/mainMenu">
 
     <ImageButton
         android:id="@+id/play_btn"

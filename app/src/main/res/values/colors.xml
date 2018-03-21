@@ -15,4 +15,10 @@
     <color name="MusicBackground">#b20000</color>
     <color name="SoundEffectBackground">#0068b2</color>
     <color name="ButtonOff">#4b4b4b</color>
+    
+    <!--WaitingRoomFragment-->
+    <color name="WaitingRoom">#273833</color>
+    <color name="black">#000</color>
+    <color name="lightOrange">#fdf2df</color>
+    <color name="lightDarkerOrange">#ebd6ab</color>
 </resources>

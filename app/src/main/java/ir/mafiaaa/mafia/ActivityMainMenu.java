@@ -1,16 +1,19 @@
 package ir.mafiaaa.mafia;
 
 import android.app.Dialog;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import ir.mafiaaa.mafia.Fragment.WaitingRoomFragment;
 
 public class ActivityMainMenu extends AppCompatActivity {
 
@@ -77,7 +80,16 @@ public class ActivityMainMenu extends AppCompatActivity {
             }
         });
 
-
+        playButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                WaitingRoomFragment waitingRoomFragment = new WaitingRoomFragment();
+                android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.mainMenu,waitingRoomFragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
 
     }
         /* Setting Popup */
