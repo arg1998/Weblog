@@ -13,6 +13,7 @@
         android:layout_height="400dp"
         android:orientation="vertical">
         <TextView
+            android:id="@+id/text_seconds_counter"
             android:textColor="@color/lightOrange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,15 +40,33 @@ RIGHT NOW"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@drawable/bg_layout_waiting_room">
-
-        <ProgressBar
-
-            android:id="@+id/waitingRoomProgressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/bg_waiting_room_progress_bar"
-            android:text="SUBSCRIBE NOW" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:id="@+id/waitingRoomProgressBar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_waiting_room_progress_bar"
+                android:text="SUBSCRIBE NOW"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                android:max="20"
+                android:progress="14"
+                android:progressDrawable="@drawable/pb_waiting_room"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:id="@+id/text_person_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="14"
+                android:textSize="25sp"/>
+        </RelativeLayout>
+        
     </LinearLayout>
 
 
