@@ -132,8 +132,6 @@ public class ChatDataAdapter extends ArrayAdapter<ChatItem>
             }
         });
 
-
-
         return row;
     }
 
