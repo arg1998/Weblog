@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    tools:context="ir.mafiaaa.mafia.Fragment.DayFragment"
+    android:background="#000"
+    android:windowSoftInputMode="adjustNothing">
+
+
+
+
+    <ImageButton
+        app:srcCompat="@drawable/ic_send"
+        android:id="@+id/btnSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#0000"
+        android:layout_marginBottom="10dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/etInputChat"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:maxLines="4"
+        android:layout_toLeftOf="@+id/btnSendMessage"
+        android:layout_toStartOf="@+id/btnSendMessage"
+        android:hint="Massage"
+        android:textColor="#cfcfcf"
+        android:textColorHint="#cfcfcf"
+        android:shadowColor="#cfcfcf"
+        android:textColorHighlight="#cfcfcf"
+        android:layout_marginBottom="5dp"
+
+
+        />
+
+    <ListView
+        android:layout_above="@id/etInputChat"
+        android:id="@+id/lvChatLists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:dividerHeight="0dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_marginTop="10dp"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:layout_marginBottom="5dp">
+
+    <ImageView
+        android:id="@+id/imgPlayerImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="#000"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tvPlayerNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/bg_chat_nickname_self"
+        android:layout_toLeftOf="@id/imgPlayerImage"
+        android:layout_marginRight="2dp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tvPlayerMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textDirection="rtl"
+        android:textColor="@color/ChatText"
+        android:padding="10dp"
+        android:background="@drawable/bg_chat_message_self_next"
+        android:text="و تاکید بنده بر این سخن امام است که:
+         ((خیلی خری!))"
+        android:layout_below="@id/tvPlayerNickName"
+        android:layout_alignRight="@id/tvPlayerNickName"
+        android:layout_alignEnd="@id/tvPlayerNickName"
+        android:layout_alignParentLeft="true"/>
+
+
+</RelativeLayout>

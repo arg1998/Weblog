@@ -1,5 +1,6 @@
 package ir.mafiaaa.mafia.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import ir.mafiaaa.mafia.GameActivity;
 import ir.mafiaaa.mafia.R;
 
 public class WaitingRoomFragment extends Fragment {
@@ -33,6 +35,15 @@ public class WaitingRoomFragment extends Fragment {
         l2 = (LinearLayout) view.findViewById(R.id.waitingRoomLayout2);
         personCounter = (TextView) view.findViewById(R.id.text_person_counter);
         secondCounter = (TextView) view.findViewById(R.id.text_seconds_counter);
+
+        //setOnClickListener
+        waitingProgressBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), GameActivity.class);
+                startActivity(intent);
+            }
+        });
 
         //animation settings
         upToDown = AnimationUtils.loadAnimation(getActivity(),R.anim.up_to_dawn);

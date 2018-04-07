@@ -21,7 +21,8 @@
         <activity android:name=".ShopActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".SelfProfileActivity" />
-        <activity android:name=".SkillsActivity"></activity>
+        <activity android:name=".SkillsActivity" />
+        <activity android:name=".GameActivity"></activity>
     </application>
 
 </manifest>

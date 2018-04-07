@@ -21,4 +21,10 @@
     <color name="black">#000</color>
     <color name="lightOrange">#fdf2df</color>
     <color name="lightDarkerOrange">#ebd6ab</color>
+
+    <!--chatItems-->
+    <color name="SelfBackground">#aa000000</color>
+    <color name="OtherBackground">#97990000</color>
+    <color name="ChiefBackground">#dc132a4b</color>
+    <color name="ChatText">#cecbd0</color>
 </resources>

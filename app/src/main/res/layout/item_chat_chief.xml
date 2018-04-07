@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:layout_marginBottom="5dp"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/imgPlayerImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="#000"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/tvPlayerNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:maxLength="20"
+        android:background="@drawable/bg_chat_nickname"
+        android:text="KadKhoda"
+        android:textColor="@color/ChatText"
+        android:layout_toRightOf="@id/imgPlayerImage"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:id="@+id/tvPlayerMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textDirection="rtl"
+        android:textColor="@color/ChatText"
+        android:padding="10dp"
+        android:background="@drawable/bg_chat_message_chief"
+        android:text="سلام عرض میکنم
+و اینکه بهتره چرت و پرت نگیم و این متنو تبدیل به استرینگ نکنیم "
+        android:layout_below="@id/tvPlayerNickName"
+        android:layout_alignLeft="@id/tvPlayerNickName"
+        android:layout_alignStart="@id/tvPlayerNickName"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
