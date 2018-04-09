@@ -1,14 +1,13 @@
 package ir.mafiaaa.mafia;
 
 import android.app.Dialog;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -48,11 +47,11 @@ public class ActivityMainMenu extends AppCompatActivity {
 
         //Menu buttons
 
-        playButton = (ImageButton) findViewById(R.id.play_btn);
-        profileButton = (ImageButton) findViewById(R.id.profile_btn);
-        skillsButton = (ImageButton) findViewById(R.id.skills_btn);
-        shopButton = (ImageButton) findViewById(R.id.shop_btn);
-        settingButton = (ImageButton) findViewById(R.id.setting_btn);
+        playButton = findViewById(R.id.play_btn);
+        profileButton = findViewById(R.id.profile_btn);
+        skillsButton = findViewById(R.id.skills_btn);
+        shopButton = findViewById(R.id.shop_btn);
+        settingButton = findViewById(R.id.setting_btn);
 
         //set OnClickListener for Buttons
 
@@ -84,10 +83,9 @@ public class ActivityMainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 WaitingRoomFragment waitingRoomFragment = new WaitingRoomFragment();
-                android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.mainMenu,waitingRoomFragment);
-                transaction.addToBackStack(null);
-                transaction.commit();
+              getSupportFragmentManager().beginTransaction().add(R.id.fragmentLayout, waitingRoomFragment).addToBackStack(null).commit();
+                FrameLayout frameLayout = findViewById(R.id.fragmentLayout);
+                frameLayout.setClickable(true);
             }
         });
 
@@ -99,11 +97,11 @@ public class ActivityMainMenu extends AppCompatActivity {
     public void ShowPopup(View v) {
         myDialog.setContentView(R.layout.popup_setting);
 
-        txtMusicState = (TextView) myDialog.findViewById((R.id.txtMusicState));
-        txtSoundEffectState = (TextView) myDialog.findViewById(R.id.txtSoundEffectState);
-        txtclose =(TextView) myDialog.findViewById(R.id.txtclose); //for close the popup
-        MusicButton = (LinearLayout) myDialog.findViewById(R.id.music_btn);
-        SoundEffectButton = (LinearLayout) myDialog.findViewById(R.id.sound_effect_btn);
+        txtMusicState = myDialog.findViewById((R.id.txtMusicState));
+        txtSoundEffectState = myDialog.findViewById(R.id.txtSoundEffectState);
+        txtclose = myDialog.findViewById(R.id.txtclose); //for close the popup
+        MusicButton = myDialog.findViewById(R.id.music_btn);
+        SoundEffectButton = myDialog.findViewById(R.id.sound_effect_btn);
 
         txtclose.setText("X");
 

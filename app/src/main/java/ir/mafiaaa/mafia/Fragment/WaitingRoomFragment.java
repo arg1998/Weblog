@@ -22,13 +22,14 @@ public class WaitingRoomFragment extends Fragment {
     ProgressBar waitingProgressBar;
     Animation upToDown,downToUp;
     TextView personCounter,secondCounter;
+    ViewGroup container;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_waiting_room, container, false);
-
+        this.container = container;
         //set the id
         waitingProgressBar = (ProgressBar) view.findViewById(R.id.waitingRoomProgressBar);
         l1 = (LinearLayout) view.findViewById(R.id.waitingRoomLayout1);
@@ -69,5 +70,9 @@ public class WaitingRoomFragment extends Fragment {
         return view;
     }
 
-
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        container.setClickable(false);
+    }
 }
